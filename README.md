@@ -194,7 +194,7 @@ $ carnage -o report 127.0.0.1
 
  - THE TOOL SUPPORTS IP-RANGE ONLY IN THE LAST OCTET .i.e 1.1.1.(1-200)  --> This is also a safety measure to prevent the user from scanning the ENTIRE INTERNET (1-255.1-255.1-255.1-255) and blowing up his/her NIC, RAM, CPU and HARDDISK :p
 
-### To Do :-
+### To Do :- 
  - ~~[ ] FIX UDP SCANNING~~
  
  - [x] ADD COLORS TO THE REST OF THE OUTPUT TO PROVIDE EVENT-BASED VISUAL RESPONSES.
