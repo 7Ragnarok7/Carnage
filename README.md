@@ -1,7 +1,13 @@
-# *CARNAGE* 
 [![Carnage-icon](https://raw.githubusercontent.com/7Ragnarok7/Carnage/main/image-src/carnage.png)][page]  
 
-##### Carnage is a ***Simple*** but ***Powerful***, ***Clever*** and ***Flexible*** Cross-Platform [Port Scanning][ps] tool made with ease to use and convenience in mind. 
+# *CARNAGE* 
+### Network Automation for Hackers 
+
+[![Python Version](https://img.shields.io/badge/python-3.9+-008000)](https://www.python.org)  [![License](https://img.shields.io/badge/license-GPLv3-800000.svg)](LICENSE) [![Windows Support](https://img.shields.io/badge/Supports-Windows-0000ff)](https://www.microsoft.com/en-us/windows) [![Linux Support](https://img.shields.io/badge/Supports-Android-ff4500)](https://www.android.com/) [![Linux Support](https://img.shields.io/badge/Support-Linux-00ff00)](https://www.linux.org/)
+
+![carnage demo](image-src/carnage.gif)
+
+### Carnage is a ***Simple*** but ***Powerful***, ***Clever*** and ***Flexible*** Cross-Platform [Port Scanning][ps] tool made with ease to use and convenience in mind.
 
 Both TCP and UDP protocols have 0 to 65535 ports. These 65535 ports can be divided into the following three ranges:-
  - System or reserved ports: from 0 to 1023
