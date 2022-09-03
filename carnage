@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
 #IMPORTING REQUIRED LIBRARIES
-from datetime import datetime
-from time import time
-from funcy import flatten
+#from datetime import datetime
+#from time import time
+#from funcy import flatten
 from numpy import array
 from sys import argv, platform
 from colorama import init, Fore
@@ -33,10 +33,12 @@ try:
 	print()
 	
 	#GRAPHICS/TEXT ART
-	if INSTALLED: call('pyfiglet -c RED carnage -f Bloody', shell = True)
-	else: call('figlet -f fonts/Bloody.flf carnage', shell = True)
+	def graphics():
+		if INSTALLED: call('pyfiglet -c RED carnage -f Bloody', shell = True)
+		else: call('figlet -f fonts/Bloody.flf carnage', shell = True)
 
 	#INITIAL MESSAGE
+	from datetime import datetime
 	log.info(f'\n{BLUE}Starting Carnage at {datetime.now().strftime("%B %d, %Y %H:%M:%S")} ( https://7Ragnarok7.github.io/Carnage ) .....{RESET}')
 	with open("temp.log", "a") as file: file.write(f'\nCommand used: {" ".join(argv)}\n')
 	
@@ -61,6 +63,7 @@ Long Options (--<options>) have more priority.
 
 Options:
 -h, --help              show this help message and exit
+-s, --silent		run in silent mode (remove the carnage banner)
 -v, --verbose           run in verbose mode
 -d, --dns               performs a dns lookup
 -r, --rdns              performs a reverse dns lookup
@@ -219,7 +222,7 @@ Examples:               carnage 1.1.1.1
 			
 		
 	#GETTING HOSTNAMES, IPs AND SCANNING PARAMETERS FORM SHELL ARGUMENTS
-	options, targets = getopt.getopt(argv[1:], 'ndrtuhvp:o:m:', ['net', 'dns', 'rdns', 'tcp', 'udp', 'help', 'verbose', 'port=', 'out=', 'mode='])
+	options, targets = getopt.getopt(argv[1:], 'sndrtuhvp:o:m:', ['silent', 'net', 'dns', 'rdns', 'tcp', 'udp', 'help', 'verbose', 'port=', 'out=', 'mode='])
 	
 
 	#CHECKING WHETHER THERE IS AN IP-RANGE OR NOT 
@@ -230,6 +233,7 @@ Examples:               carnage 1.1.1.1
 
 	
 	#VARIABLES
+	from funcy import flatten
 	targets = list(flatten(targets)) #CONVERTING NESTED LISTS RETURNED FROM CONVERT() TO NORMAL LISTS
 	targets = dict(zip(targets, list(map(socket.gethostbyname, targets)))) #CONVERTING THE TARGETS INTO A DICTIONARY WITH THEIR RESPECTIVE IPs FOR BETTER ADDRESSING
 	options = dict(options) #CONVERTING THE OPTIONS INTO A DICTIONARY FOR BETTER ADDRESSING
@@ -237,7 +241,7 @@ Examples:               carnage 1.1.1.1
 	live_targets = []
 	
 	#CONSTANTS
-	POSSIBLE_OPTIONS = {"-n":"--net", "-m":"--mode", "-d":"--dns", "-r":"--rdns", "-t":"--tcp", "-u":"--udp", "-h":"--help", "-v":"--verbose", "-p":"--port", "-o":"--out"}
+	POSSIBLE_OPTIONS = {"-s":"--silent", "-n":"--net", "-m":"--mode", "-d":"--dns", "-r":"--rdns", "-t":"--tcp", "-u":"--udp", "-h":"--help", "-v":"--verbose", "-p":"--port", "-o":"--out"}
 	TARGET_LEN = len(targets)
 	OPTION_LEN = len(options)
 	SWAP_TARGETS = dict(zip(targets.values(), targets.keys())) #Same targets dictionary with keys and values swapped with each other
@@ -271,8 +275,10 @@ Examples:               carnage 1.1.1.1
 	
 	################### MAIN ############################ *********
 	
+	if "--silent" not in options: graphics()
 
 	#RECORDING THE STARTING TIME TO CALCULATE TOTAL SCANNING TIME
+	from time import time
 	STARTING_TIME = time()
 	
 	#STARTING THE SCAN *********

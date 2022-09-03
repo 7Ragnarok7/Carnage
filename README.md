@@ -126,12 +126,14 @@ $ carnage [--option(s)] [target(s)]
 
 ### Options :-
  - -h, --help              show this help message and exit
+ 
+ - -s, --silent		   run in silent mode (remove the carnage banner)
 
  - -v, --verbose           run in verbose mode
 
  - -d, --dns               performs a DNS lookup
 
- - -r, --rdns		   	   performs a reverse dns lookup
+ - -r, --rdns		   performs a reverse dns lookup
 
  - -p, --port<port(s)>     only scan specified port(s)
  -                         Ex: -p 21; -p 21,22,23;
