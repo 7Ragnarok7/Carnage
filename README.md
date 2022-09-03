@@ -162,9 +162,9 @@ $ carnage google.com
 $ carnage google.com yahoo.com
 $ carnage 1.1.1.1 2.2.2.2 3.3.3.3
 $ carnage 1.1.1.1-100 google.com (Perform a tcp scan on all the hosts without pinging to bypass firewall icmp block)
-$ carnage -p 20 1.1.1.1
-$ carnage -p top10 2.2.2.2
-$ carnage -p 20,21,22 1.1.1.1
+$ carnage -tp 20 1.1.1.1
+$ carnage -tp top10 2.2.2.2
+$ carnage -tp 20,21,22 1.1.1.1
 $ carnage -nm lan -p 21 192.168.1.1-255 (Perform a tcp port scan in lan mode on all the live hosts)
 $ carnage -n 1.1.1.1-255
 $ carnage -nr 1.1.1.1-255 (Perform a reverse dns lookup on all the live targets in the network)
