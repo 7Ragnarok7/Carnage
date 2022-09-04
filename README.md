@@ -1,13 +1,15 @@
 [![Carnage-icon](https://raw.githubusercontent.com/7Ragnarok7/Carnage/main/image-src/carnage.png)][page]  
 
 # *CARNAGE* 
-### Network Automation for Hackers 
+### Network Automation for Hackers
 
-[![Python Version](https://img.shields.io/badge/python-3.9+-008000.svg)](https://www.python.org)  [![License](https://img.shields.io/badge/license-GPLv3-800000.svg)](LICENSE) [![Windows Support](https://img.shields.io/badge/Supports-Windows-0000ff.svg)](https://www.microsoft.com/en-us/windows) [![Linux Support](https://img.shields.io/badge/Supports-Android-ff4500.svg)](https://www.android.com/) [![Linux Support](https://img.shields.io/badge/Support-Linux-00ff00.svg)](https://www.linux.org/)
+[![Python Version](https://img.shields.io/badge/python-3.9+-008000.svg)](https://www.python.org)  [![License](https://img.shields.io/badge/license-GPLv3-800000.svg)](LICENSE) [![Windows Support](https://img.shields.io/badge/Supports-Windows-0000ff.svg)](https://www.microsoft.com/en-us/windows) [![Linux Support](https://img.shields.io/badge/Supports-Android-ff4500.svg)](https://www.android.com/) [![Linux Support](https://img.shields.io/badge/Support-Linux-00ff00.svg)](https://www.linux.org/) [![Web Support](https://img.shields.io/badge/Supports-Web%20APIs-ff00ff.svg)](https://developer.mozilla.org/en-US/docs/Web/API)
 
 ![carnage demo](image-src/carnage.gif)
 
-### Carnage is a ***Simple*** but ***Powerful***, ***Clever*** and ***Flexible*** Cross-Platform [Port Scanning][ps] tool made with ease to use and convenience in mind.
+### World's first one of it's kind Network Automation as a Service (NaaaS).
+
+##### Carnage is a ***Simple*** but ***Powerful***, ***Clever*** and ***Flexible*** Cross-Platform [Port Scanning][ps] tool made with ease to use and convenience in mind.
 
 Both TCP and UDP protocols have 0 to 65535 ports. These 65535 ports can be divided into the following three ranges:-
  - System or reserved ports: from 0 to 1023
@@ -76,6 +78,10 @@ $ ./uninstall.sh
  - Packed with lots of additional features all in one place.
  
  - Full Support for Android devices (*via* termux)
+ 
+ - Supports web-api calls
+ 
+ - World's first one of it's kind Network Automation as a Service (NaaaS)
 
  - Supports IP-RANGES (1.1.1.1-100)
 
@@ -88,6 +94,8 @@ $ ./uninstall.sh
  - Is flexible. Multiple scanning options can be combined based on requirements.
 
  - Is clever. Scans only the live targets if a network scan is combined with other scans.
+ 
+ - Has a very intuitive and user-friendly Command-Line Interface
 
  - Lists all the probable services/protocols being used by the respective open ports which are discovered.
 
