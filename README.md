@@ -135,6 +135,8 @@ $ carnage [--option(s)] [target(s)]
 ### Options :-
  - -h, --help              show this help message and exit
  
+ - -b, --black		           turn on dark-web mode
+ 
  - -s, --silent		   run in silent mode (remove the carnage banner)
 
  - -v, --verbose           run in verbose mode
