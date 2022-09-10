@@ -214,7 +214,7 @@ $ carnage -o report 127.0.0.1
 
  - THE USER MUST MAINTAIN A SEQUENCE "carnage [--option(s)] [target(s)]"
 
- - THE TOOL SUPPORTS IP-RANGE ONLY IN THE LAST OCTET .i.e 1.1.1.(1-200)  --> This is also a safety measure to prevent the user from scanning the ENTIRE INTERNET (1-255.1-255.1-255.1-255) and blowing up his/her NIC, RAM, CPU and HARDDISK :p
+ - THE TOOL SUPPORTS IP-RANGE ONLY IN THE LAST OCTET .i.e 1.1.1.(1-200)  --> This is also a safety measure to prevent the user from scanning the ENTIRE INTERNET (1-255.1-255.1-255.1-255) and blowing up his/her NIC, RAM, CPU and HARDDISK :p (pun intended)
 
 ### To Do :- 
  - ~~[ ] FIX UDP SCANNING~~
