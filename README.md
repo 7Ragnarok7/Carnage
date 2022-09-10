@@ -1,4 +1,4 @@
-[![Carnage-icon](https://raw.githubusercontent.com/7Ragnarok7/Carnage/main/image-src/carnage.png)][page]  
+[![Carnage-icon](image-src/carnage.png)][page]  
 
 # *CARNAGE* 
 ### Network Automation for Hackers
