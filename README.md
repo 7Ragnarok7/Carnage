@@ -75,17 +75,21 @@ $ ./uninstall.sh
  - Follow the above steps using ***termux-uninstall.sh*** if uninstalling for termux
 
 ### Highlights :-
- - Packed with lots of additional features all in one place.
+ - Full Support for Linux, Windows & Android devices (*via* termux)
  
- - Full Support for Android devices (*via* termux)
- 
- - Supports web-api calls
+ - Supports web-api calls (platform-less on-demand interaction)
  
  - World's first one of it's kind Network Automation as a Service (NaaaS)
+
+ - Easy to host & deploy as a service on the cloud / your private server.
+
+ - Packed with lots of additional features all in one place
 
  - Supports IP-RANGES (1.1.1.1-100)
 
  - Supports Network Scanning (Ping Sweep)
+
+ - Has a Dark-Web mode. The dark-web mode can be used to perform all the operations of carnage seamlessly on dark-web (.onion) sites without any need of the tor browser
 
  - Has a turbo mode (LAN mode) for network scanning. The turbo mode can be used both in LAN and wan but it is recommended to use only in LAN as it may decrease the accuracy of the scan in a wan network.
  
@@ -95,7 +99,7 @@ $ ./uninstall.sh
 
  - Is clever. Scans only the live targets if a network scan is combined with other scans.
  
- - Has a very intuitive and user-friendly Command-Line Interface
+ - Has a very intuitive and user-friendly Command-Line Interface. Also has a web interface for those who are not comfortable with CLI
 
  - Lists all the probable services/protocols being used by the respective open ports which are discovered.
 
@@ -204,7 +208,7 @@ $ carnage -o report 127.0.0.1
  
  - GENERATING A REPORT DOES NOT WORK PROPERLY IN WINDOWS.
  
- - IS SLOW AS NO MULTI-THREADING CONCEPTS USED IN THE PROGRAM.
+ - IS SLOW AS NO MULTI-THREADING CONCEPTS USED IN THE PROGRAM YET.
  
  - UDP DOESN'T WORKS PROPERLY AS OF NOW.
 
