@@ -11,3 +11,5 @@ else {
 }
 ?>
 <!--Php code start here -->  
+
+<!-- Add the above block of code in your web page --> 
