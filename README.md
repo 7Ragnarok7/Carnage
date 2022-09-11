@@ -22,7 +22,7 @@ Both TCP and UDP protocols have 0 to 65535 ports. These 65535 ports can be divid
 
 **Carnage** can also scan a range of hosts to find live hosts.
 
-### Checkout the Working Model of the project here --> [Carnage PPT](Carnage.pptx)
+### Checkout the Working Model of the project here --> [Carnage PPT](docs/Carnage.pptx)
 
 ### Checkout the Demonstration Video here --> [DEMO VIDEO](https://drive.google.com/file/d/1ECOr-3T36yqXjl7KbAmPs8rbRdV37aYr/view?usp=sharing)
 
